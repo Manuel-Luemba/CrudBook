@@ -1,7 +1,7 @@
 from django.db import models
 from apps.book.choices import BOOK_TYPES
 
-class Model(models.Model):
+class Book(models.Model):
     title = models.CharField(max_length=50)
     author = models.CharField(max_length=50, blank=True)
     price = models.DecimalField(max_digits=10, decimal_places=2)
